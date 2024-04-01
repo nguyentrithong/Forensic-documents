@@ -1,41 +1,79 @@
 Forensics
+
 Forensics challenges can include file format analysis, steganography, memory dump analysis, or network packet capture analysis. Any challenge to examine and process a hidden piece of information out of static data files (as opposed to executable programs or remote servers) could be considered a Forensics challenge. The following are the tools used in forensics:
 
 split: A tool for splitting files.
+
 pdfinfo: A tool for analyzing PDF files.
+
 pdfimages: A tool for extracting images from PDF files.
+
 pdfcrack: A tool for recovering PDF passwords.
+
 pdfdetach: A tool for extracting embedded files from PDF files.
+
 Keepass: A password manager.
+
 Magic Numbers: A tool for identifying file types based on their signatures.
+
 foremost: A tool for recovering files based on their headers, footers, and internal data structures.
+
 binwalk: A tool for analyzing and extracting firmware images.
+
 Repair image online tool: An online tool for repairing corrupt images.
+
 photorec: A tool for recovering lost files from hard disks and memory cards.
+
 TestDisk: A tool for recovering lost partitions and files.
+
 pngcheck: A tool for checking PNG files for errors.
+
 pngcsum: A tool for checking the integrity of PNG files.
+
 Registry Dumper: A tool for dumping the Windows registry.
+
 Dnscat2: A tool for tunneling data over DNS.
+
 pefile: A tool for analyzing Windows PE files.
+
 Wireshark: A network protocol analyzer.
+
 Network Miner: A network forensic analysis tool.
+
 PCAPNG: A tool for capturing and analyzing network traffic.
+
 tcpflow: A tool for capturing and analyzing network traffic.
+
 PcapXray: A tool for analyzing and visualizing network traffic.
+
 qpdf: A tool for manipulating PDF files.
+
 Audacity: A tool for analyzing audio files.
+
 sonic visualiser: A tool for analyzing audio files.
+
 ffmpeg strings: A tool for extracting strings from media files.
+
 file: A tool for identifying file types based on their content.
+
 grep: A tool for searching for patterns in files.
+
 scalpel: A tool for carving files from disk images.
+
 bgrep: A tool for searching for patterns in binary files.
+
 hexdump: A tool for dumping binary data in hexadecimal format.
+
 xxd: A tool for converting binary data to hexadecimal format.
+
 base64: A tool for encoding and decoding base64 data.
+
 xplico framework: A network forensic analysis tool.
+
 zsteg: A tool for detecting steganography in PNG and BMP files.
+
 gimp: A tool for editing images.
+
 Memory dump — volatility: A tool for analyzing memory dumps.
+
 ethscan: A tool for analyzing Ethereum blockchain transactions.
