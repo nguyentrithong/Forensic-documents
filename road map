@@ -1,4 +1,5 @@
 Giai đoạn 1: Nền tảng cơ bản
+
 Hiểu về CTF và Forensics:
 
 Tìm hiểu về CTF là gì và các dạng bài thi phổ biến trong CTF, đặc biệt là forensics.
@@ -8,13 +9,16 @@ Học các khái niệm cơ bản:
 Hệ điều hành và File System: Hiểu cách hoạt động của các hệ điều hành (Windows, Linux) và cấu trúc file system (NTFS, FAT32, ext4).
 Mã hóa và Mã hóa ngược: Hiểu về mã hóa cơ bản, mã hóa đối xứng và không đối xứng, kỹ thuật mã hóa ngược.
 Network Forensics: Hiểu về các giao thức mạng (TCP/IP, HTTP, DNS) và công cụ phân tích mạng (Wireshark).
+
 Công cụ cơ bản:
 
 Hex Editors: Công cụ để xem và chỉnh sửa file ở cấp độ byte. (Ví dụ: HxD, 010 Editor)
 File Analysis: Công cụ phân tích và trích xuất thông tin từ file. (Ví dụ: Binwalk, ExifTool)
 Disk Imaging Tools: Công cụ tạo và phân tích image của đĩa. (Ví dụ: FTK Imager, dd)
 Network Analysis Tools: Công cụ phân tích traffic mạng. (Ví dụ: Wireshark, tcpdump)
+
 Giai đoạn 2: Thực hành và học tập nâng cao
+
 Tham gia các khóa học và đọc tài liệu:
 
 Khóa học Online: Các khóa học như "Introduction to Digital Forensics" trên Udemy, Coursera, hoặc các khóa học miễn phí trên Cybrary.
@@ -23,27 +27,34 @@ Thực hành với các CTF Platforms:
 
 CTF Platforms: Tham gia các trang web CTF như Hack The Box, TryHackMe, OverTheWire, CTFtime để tìm kiếm các cuộc thi và bài tập forensics.
 Thực hành liên tục: Thực hành thường xuyên các bài tập forensics trên các nền tảng này để nâng cao kỹ năng.
+
 Giai đoạn 3: Chuyên sâu và nâng cao kỹ năng
+
 Phân tích chuyên sâu:
 
 Malware Analysis: Học cách phân tích mã độc và nhận diện các dấu hiệu của malware trong hệ thống.
 Memory Forensics: Học cách phân tích dump bộ nhớ và sử dụng các công cụ như Volatility.
 Log Analysis: Học cách phân tích các file log từ hệ điều hành, ứng dụng và network devices.
+
 Tham gia các cuộc thi CTF:
 
 Thực chiến: Tham gia các cuộc thi CTF trực tiếp trên CTFtime, Defcon CTF, Google CTF, v.v.
 Xây dựng đội nhóm: Tìm kiếm và tham gia vào các nhóm CTF để học hỏi kinh nghiệm từ những người chơi khác.
+
 Nâng cao kiến thức và cập nhật:
 
 Cộng đồng: Tham gia vào các cộng đồng forensics và CTF trên Reddit, Discord, và các diễn đàn chuyên ngành.
 Theo dõi các blog và kênh YouTube: Theo dõi các blog và kênh YouTube chuyên về forensics để cập nhật các kỹ thuật và công cụ mới nhất.
+
 Giai đoạn 4: Đánh giá và cải thiện liên tục
+
 Phân tích bài giải:
 
 Sau mỗi cuộc thi CTF, phân tích bài giải của các đội khác để hiểu rõ hơn về các kỹ thuật và chiến lược họ đã sử dụng.
 Phản hồi và học hỏi:
 
 Nhận phản hồi từ các thành viên trong nhóm và từ cộng đồng để cải thiện kỹ năng của mình.
+
 Đặt mục tiêu:
 
 Đặt mục tiêu cụ thể để cải thiện từng kỹ năng trong forensics, chẳng hạn như phân tích memory, network, hoặc malware.
