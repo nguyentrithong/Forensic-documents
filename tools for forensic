@@ -59,3 +59,53 @@ zsteg: Công cụ phát hiện steganography trong các tệp PNG và BMP.
 Công cụ blockchain
 
 ethscan: Công cụ phân tích các giao dịch blockchain Ethereum.
+
+Các Công Cụ Khuyến Nghị
+
+1. Archive Files (ZIP, TGZ)
+
+7-Zip: Công cụ mạnh mẽ cho nén và giải nén.
+binwalk: Dùng để phân tích và trích xuất firmware, nhưng cũng hữu ích với các tệp nén.
+
+2. Image File Formats (JPG, GIF, BMP, PNG)
+
+ExifTool: Phân tích metadata của tệp hình ảnh.
+GIMP: Công cụ chỉnh sửa hình ảnh mạnh mẽ.
+Stegsolve: Dùng để phân tích steganography trong ảnh.
+
+3. Filesystem Images (EXT4)
+
+Autopsy/The Sleuth Kit: Công cụ phân tích ảnh hệ thống tệp.
+TestDisk: Khôi phục phân vùng bị mất.
+Kaitai Struct: Dùng để phân tích cấu trúc tệp.
+
+4. Packet Captures (PCAP, PCAPNG)
+
+Wireshark: Công cụ phân tích gói mạng.
+tcpdump: Dùng để thu thập và phân tích gói mạng.
+
+5. Memory Dumps
+
+Volatility: Công cụ phân tích và khám phá memory dump.
+
+6. PDF
+
+pdfinfo: Phân tích thông tin về tệp PDF.
+pdfimages: Trích xuất hình ảnh từ tệp PDF.
+pdfcrack: Khôi phục mật khẩu tệp PDF.
+
+7. Video (MP4), Audio (WAV, MP3)
+
+ffmpeg: Công cụ mạnh mẽ để xử lý video và audio.
+Audacity: Phân tích và chỉnh sửa tệp âm thanh.
+
+8. Microsoft's Office Formats (RTF, OLE, OOXML)
+
+oletools: Phân tích các tệp OLE.
+LibreOffice: Mở và chỉnh sửa các định dạng tệp Microsoft Office.
+
+Các Công Cụ Hữu Ích Khác
+
+010 Editor: Trình chỉnh sửa hex với hỗ trợ mẫu định dạng tệp.
+Kaitai Struct: Công cụ phân tích định dạng tệp mở nguồn.
+Wireshark: Không chỉ phân tích gói mạng, mà còn hỗ trợ phân tích một số định dạng tệp đa phương tiện như GIF, JPG, PNG.
