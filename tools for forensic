@@ -1,79 +1,61 @@
-Forensics
+Công cụ tệp và định dạng
 
-Forensics challenges can include file format analysis, steganography, memory dump analysis, or network packet capture analysis. Any challenge to examine and process a hidden piece of information out of static data files (as opposed to executable programs or remote servers) could be considered a Forensics challenge. The following are the tools used in forensics:
+split: Công cụ chia nhỏ các tệp.
+pdfinfo: Công cụ phân tích tệp PDF.
+pdfimages: Công cụ trích xuất hình ảnh từ tệp PDF.
+pdfcrack: Công cụ khôi phục mật khẩu PDF.
+pdfdetach: Công cụ trích xuất các tệp nhúng từ tệp PDF.
+Keepass: Trình quản lý mật khẩu.
+Magic Numbers: Công cụ nhận diện loại tệp dựa trên chữ ký của chúng.
+foremost: Công cụ khôi phục tệp dựa trên header, footer và cấu trúc dữ liệu bên trong.
+binwalk: Công cụ phân tích và trích xuất hình ảnh firmware.
+Repair image online tool: Công cụ trực tuyến để sửa chữa hình ảnh bị hỏng.
+photorec: Công cụ khôi phục các tệp đã mất từ ổ cứng và thẻ nhớ.
+TestDisk: Công cụ khôi phục phân vùng và các tệp đã mất.
 
-split: A tool for splitting files.
+Công cụ kiểm tra và phân tích hình ảnh
 
-pdfinfo: A tool for analyzing PDF files.
+pngcheck: Công cụ kiểm tra các tệp PNG lỗi.
+pngcsum: Công cụ kiểm tra tính toàn vẹn của các tệp PNG.
+GIMP: Công cụ chỉnh sửa hình ảnh.
 
-pdfimages: A tool for extracting images from PDF files.
+Công cụ hệ thống và registry
 
-pdfcrack: A tool for recovering PDF passwords.
+Registry Dumper: Công cụ trích xuất Windows registry.
+Memory dump — volatility: Công cụ phân tích bộ nhớ dump.
 
-pdfdetach: A tool for extracting embedded files from PDF files.
+Công cụ phân tích mạng và dữ liệu
 
-Keepass: A password manager.
+Wireshark: Công cụ phân tích giao thức mạng.
+Network Miner: Công cụ phân tích pháp lý mạng.
+PCAPNG: Công cụ bắt và phân tích lưu lượng mạng.
+tcpflow: Công cụ bắt và phân tích lưu lượng mạng.
+PcapXray: Công cụ phân tích và hiển thị lưu lượng mạng.
+Dnscat2: Công cụ truyền dữ liệu qua DNS.
 
-Magic Numbers: A tool for identifying file types based on their signatures.
+Công cụ phân tích tệp thực thi
 
-foremost: A tool for recovering files based on their headers, footers, and internal data structures.
+pefile: Công cụ phân tích các tệp PE của Windows.
 
-binwalk: A tool for analyzing and extracting firmware images.
+Công cụ phân tích và trích xuất dữ liệu
 
-Repair image online tool: An online tool for repairing corrupt images.
+qpdf: Công cụ thao tác các tệp PDF.
+Audacity: Công cụ phân tích tệp âm thanh.
+sonic visualiser: Công cụ phân tích tệp âm thanh.
+ffmpeg strings: Công cụ trích xuất chuỗi từ các tệp media.
+file: Công cụ nhận diện loại tệp dựa trên nội dung của chúng.
+grep: Công cụ tìm kiếm mẫu trong các tệp.
+scalpel: Công cụ trích xuất các tệp từ ảnh đĩa.
+bgrep: Công cụ tìm kiếm mẫu trong các tệp nhị phân.
+hexdump: Công cụ trích xuất dữ liệu nhị phân dưới dạng hệ thập lục phân.
+xxd: Công cụ chuyển đổi dữ liệu nhị phân sang hệ thập lục phân.
+base64: Công cụ mã hóa và giải mã dữ liệu base64.
+xplico framework: Công cụ phân tích pháp lý mạng.
 
-photorec: A tool for recovering lost files from hard disks and memory cards.
+Công cụ steganography
 
-TestDisk: A tool for recovering lost partitions and files.
+zsteg: Công cụ phát hiện steganography trong các tệp PNG và BMP.
 
-pngcheck: A tool for checking PNG files for errors.
+Công cụ blockchain
 
-pngcsum: A tool for checking the integrity of PNG files.
-
-Registry Dumper: A tool for dumping the Windows registry.
-
-Dnscat2: A tool for tunneling data over DNS.
-
-pefile: A tool for analyzing Windows PE files.
-
-Wireshark: A network protocol analyzer.
-
-Network Miner: A network forensic analysis tool.
-
-PCAPNG: A tool for capturing and analyzing network traffic.
-
-tcpflow: A tool for capturing and analyzing network traffic.
-
-PcapXray: A tool for analyzing and visualizing network traffic.
-
-qpdf: A tool for manipulating PDF files.
-
-Audacity: A tool for analyzing audio files.
-
-sonic visualiser: A tool for analyzing audio files.
-
-ffmpeg strings: A tool for extracting strings from media files.
-
-file: A tool for identifying file types based on their content.
-
-grep: A tool for searching for patterns in files.
-
-scalpel: A tool for carving files from disk images.
-
-bgrep: A tool for searching for patterns in binary files.
-
-hexdump: A tool for dumping binary data in hexadecimal format.
-
-xxd: A tool for converting binary data to hexadecimal format.
-
-base64: A tool for encoding and decoding base64 data.
-
-xplico framework: A network forensic analysis tool.
-
-zsteg: A tool for detecting steganography in PNG and BMP files.
-
-gimp: A tool for editing images.
-
-Memory dump — volatility: A tool for analyzing memory dumps.
-
-ethscan: A tool for analyzing Ethereum blockchain transactions.
+ethscan: Công cụ phân tích các giao dịch blockchain Ethereum.
