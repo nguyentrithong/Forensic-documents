@@ -1,4 +1,5 @@
 Hướng dẫn phân tích file pcapng trong CTF:
+
 Để phân tích file pcapng trong CTF hiệu quả, bạn có thể áp dụng các bước sau:
 Bước 1: Chuẩn bị
 Công cụ: Cài đặt Wireshark, tshark (dòng lệnh của Wireshark), tcpdump, ngrep, hoặc bất kỳ công cụ phân tích mạng nào bạn thấy thoải mái.
@@ -30,3 +31,11 @@ Bạn muốn khai thác lỗ hổng SQL Injection.
 Sử dụng bộ lọc http.request.method == "POST" để hiển thị chỉ các yêu cầu POST.
 Theo dõi luồng dữ liệu và phân tích nội dung của các tham số POST để tìm kiếm dấu hiệu của SQL Injection.
 
+Quy Trình Giải Quyết Các Thử Thách Archive
+
+Bắt đầu bằng cách kiểm tra tệp zip với unzip để xem liệu có thông báo lỗi nào không.
+Sử dụng zipdetails để lấy thông tin chi tiết về tệp.
+Sử dụng zipinfo để kiểm tra nội dung mà không cần giải nén.
+Thử sửa chữa tệp với zip -F hoặc zip -FF nếu tệp zip bị hỏng.
+Nếu tệp được bảo vệ bằng mật khẩu, thử dùng fcrackzip để brute-force mật khẩu.
+Kiểm tra các trường hợp plaintext attack nếu có bản sao không mã hóa của bất kỳ tệp nào bên trong.
