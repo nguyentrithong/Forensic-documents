@@ -1,0 +1,32 @@
+Hướng dẫn phân tích file pcapng trong CTF:
+Để phân tích file pcapng trong CTF hiệu quả, bạn có thể áp dụng các bước sau:
+Bước 1: Chuẩn bị
+Công cụ: Cài đặt Wireshark, tshark (dòng lệnh của Wireshark), tcpdump, ngrep, hoặc bất kỳ công cụ phân tích mạng nào bạn thấy thoải mái.
+Kiến thức: Nắm vững kiến thức cơ bản về các giao thức mạng (TCP/IP, HTTP, DNS, ...) và cấu trúc gói tin.
+Mục tiêu: Xác định rõ mục tiêu của thử thách CTF (ví dụ: tìm flag, khai thác lỗ hổng, ...).
+Bước 2: Phân tích sơ bộ
+Khám phá chung: Mở file pcapng trong Wireshark và xem qua các thông tin cơ bản như địa chỉ IP nguồn/đích, giao thức, cổng, độ dài gói tin, ...
+Bộ lọc hiển thị: Sử dụng bộ lọc hiển thị của Wireshark (ví dụ: ip.addr == 192.168.1.1, http.request.method == "POST", ...) để tập trung vào các gói tin liên quan đến mục tiêu.
+Thống kê: Sử dụng chức năng Statistics của Wireshark để có cái nhìn tổng quan về lưu lượng mạng (ví dụ: các giao thức được sử dụng nhiều nhất, địa chỉ IP hoạt động tích cực nhất, ...).
+Bước 3: Phân tích chuyên sâu
+Theo dõi luồng dữ liệu: Sử dụng chức năng Follow TCP Stream để theo dõi toàn bộ nội dung trao đổi giữa hai máy chủ.
+Phân tích nội dung gói tin: Kiểm tra kỹ nội dung gói tin (ví dụ: trường dữ liệu, tiêu đề, payload, ...) để tìm kiếm thông tin có giá trị như flag, mật khẩu, thông tin nhạy cảm, ...
+Tìm kiếm các mẫu: Sử dụng các biểu thức chính quy (regex) để tìm kiếm các mẫu cụ thể trong nội dung gói tin.
+Khai thác lỗ hổng: Phân tích các gói tin để tìm kiếm các dấu hiệu của lỗ hổng bảo mật (ví dụ: tấn công SQL Injection, Cross-Site Scripting, ...).
+Giải mã: Sử dụng các công cụ giải mã phù hợp để giải mã các dữ liệu bị mã hóa (ví dụ: Base64, XOR, ...).
+Bước 4: Kết luận
+Tóm tắt: Tóm tắt những phát hiện quan trọng và cách bạn khai thác chúng để hoàn thành thử thách CTF.
+Lưu ý: Ghi chú lại những kinh nghiệm và bài học rút ra từ quá trình phân tích file pcapng để áp dụng cho các thử thách tiếp theo.
+Mẹo bổ sung:
+Sử dụng tshark để phân tích file pcapng với các tập lệnh tự động hóa.
+Tham khảo các write-up của các thử thách CTF tương tự để học hỏi kinh nghiệm từ người khác.
+Luyện tập thường xuyên với các file pcapng mẫu để nâng cao kỹ năng phân tích.
+Ví dụ:
+Bạn muốn tìm flag trong một file pcapng chứa lưu lượng HTTP.
+Sử dụng bộ lọc http để hiển thị chỉ các gói tin HTTP.
+Theo dõi luồng dữ liệu để tìm kiếm các yêu cầu và phản hồi HTTP có chứa flag.
+Kiểm tra kỹ nội dung gói tin, bao gồm cả tiêu đề và payload, để tìm kiếm flag.
+Bạn muốn khai thác lỗ hổng SQL Injection.
+Sử dụng bộ lọc http.request.method == "POST" để hiển thị chỉ các yêu cầu POST.
+Theo dõi luồng dữ liệu và phân tích nội dung của các tham số POST để tìm kiếm dấu hiệu của SQL Injection.
+
