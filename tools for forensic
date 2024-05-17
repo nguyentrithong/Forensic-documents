@@ -109,12 +109,3 @@ Các Công Cụ Hữu Ích Khác
 010 Editor: Trình chỉnh sửa hex với hỗ trợ mẫu định dạng tệp.
 Kaitai Struct: Công cụ phân tích định dạng tệp mở nguồn.
 Wireshark: Không chỉ phân tích gói mạng, mà còn hỗ trợ phân tích một số định dạng tệp đa phương tiện như GIF, JPG, PNG.
-
-Quy Trình Giải Quyết Các Thử Thách Archive
-
-Bắt đầu bằng cách kiểm tra tệp zip với unzip để xem liệu có thông báo lỗi nào không.
-Sử dụng zipdetails để lấy thông tin chi tiết về tệp.
-Sử dụng zipinfo để kiểm tra nội dung mà không cần giải nén.
-Thử sửa chữa tệp với zip -F hoặc zip -FF nếu tệp zip bị hỏng.
-Nếu tệp được bảo vệ bằng mật khẩu, thử dùng fcrackzip để brute-force mật khẩu.
-Kiểm tra các trường hợp plaintext attack nếu có bản sao không mã hóa của bất kỳ tệp nào bên trong.
