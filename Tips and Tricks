@@ -34,48 +34,56 @@ Hướng dẫn phân tích file pcapng trong CTF:
 
 Để phân tích file pcapng trong CTF hiệu quả, bạn có thể áp dụng các bước sau:
 
-Bước 1: Chuẩn bị
+1. Chuẩn bị môi trường phân tích
 
-Công cụ: Cài đặt Wireshark, tshark (dòng lệnh của Wireshark), tcpdump, ngrep, hoặc bất kỳ công cụ phân tích mạng nào bạn thấy thoải mái.
-Kiến thức: Nắm vững kiến thức cơ bản về các giao thức mạng (TCP/IP, HTTP, DNS, ...) và cấu trúc gói tin.
-Mục tiêu: Xác định rõ mục tiêu của thử thách CTF (ví dụ: tìm flag, khai thác lỗ hổng, ...).
+Cài đặt các công cụ cần thiết: Đảm bảo rằng bạn đã cài đặt Wireshark và các công cụ phân tích mạng khác như TShark (phiên bản dòng lệnh của Wireshark), tcpdump, và NetworkMiner.
 
-Bước 2: Phân tích sơ bộ
+2. Mở file PCAPNG
 
-Khám phá chung: Mở file pcapng trong Wireshark và xem qua các thông tin cơ bản như địa chỉ IP nguồn/đích, giao thức, cổng, độ dài gói tin, ...
-Bộ lọc hiển thị: Sử dụng bộ lọc hiển thị của Wireshark (ví dụ: ip.addr == 192.168.1.1, http.request.method == "POST", ...) để tập trung vào các gói tin liên quan đến mục tiêu.
-Thống kê: Sử dụng chức năng Statistics của Wireshark để có cái nhìn tổng quan về lưu lượng mạng (ví dụ: các giao thức được sử dụng nhiều nhất, địa chỉ IP hoạt động tích cực nhất, ...).
+Mở file trong Wireshark: Khởi động Wireshark và mở file PCAPNG bạn cần phân tích.
 
-Bước 3: Phân tích chuyên sâu
+3. Tổng quan về dữ liệu
 
-Theo dõi luồng dữ liệu: Sử dụng chức năng Follow TCP Stream để theo dõi toàn bộ nội dung trao đổi giữa hai máy chủ.
-Phân tích nội dung gói tin: Kiểm tra kỹ nội dung gói tin (ví dụ: trường dữ liệu, tiêu đề, payload, ...) để tìm kiếm thông tin có giá trị như flag, mật khẩu, thông tin nhạy cảm, ...
-Tìm kiếm các mẫu: Sử dụng các biểu thức chính quy (regex) để tìm kiếm các mẫu cụ thể trong nội dung gói tin.
-Khai thác lỗ hổng: Phân tích các gói tin để tìm kiếm các dấu hiệu của lỗ hổng bảo mật (ví dụ: tấn công SQL Injection, Cross-Site Scripting, ...).
-Giải mã: Sử dụng các công cụ giải mã phù hợp để giải mã các dữ liệu bị mã hóa (ví dụ: Base64, XOR, ...)
+Statistics > Summary: Xem thông tin tổng quan về file PCAPNG như số lượng gói tin, thời gian chụp, và các giao thức mạng chính.
+Statistics > Protocol Hierarchy: Xem sự phân bố các giao thức mạng để biết được các giao thức nào xuất hiện nhiều nhất.
 
-Bước 4: Kết luận
+4. Lọc và xác định các luồng dữ liệu quan trọng
 
-Tóm tắt: Tóm tắt những phát hiện quan trọng và cách bạn khai thác chúng để hoàn thành thử thách CTF.
-Lưu ý: Ghi chú lại những kinh nghiệm và bài học rút ra từ quá trình phân tích file pcapng để áp dụng cho các thử thách tiếp theo.
+Statistics > Conversations: Xem các cuộc hội thoại giữa các địa chỉ IP để xác định các luồng dữ liệu quan trọng.
+Statistics > Endpoints: Xem các địa chỉ IP và MAC để biết được các thiết bị nào tham gia vào quá trình truyền tải dữ liệu.
 
-Mẹo bổ sung:
+5. Sử dụng các bộ lọc
 
-Sử dụng tshark để phân tích file pcapng với các tập lệnh tự động hóa.
-Tham khảo các write-up của các thử thách CTF tương tự để học hỏi kinh nghiệm từ người khác.
-Luyện tập thường xuyên với các file pcapng mẫu để nâng cao kỹ năng phân tích.
+Lọc theo giao thức: Sử dụng các bộ lọc như http, tcp, udp, dns, icmp để phân tích các giao thức cụ thể.
+Lọc theo địa chỉ IP: Sử dụng các bộ lọc như ip.src == 192.168.1.1 hoặc ip.dst == 192.168.1.1 để phân tích dữ liệu từ hoặc đến một địa chỉ IP cụ thể.
+Lọc theo cổng: Sử dụng các bộ lọc như tcp.port == 80 hoặc udp.port == 53 để phân tích dữ liệu qua các cổng cụ thể.
 
-Ví dụ:
-Bạn muốn tìm flag trong một file pcapng chứa lưu lượng HTTP.
+6. Theo dõi các luồng dữ liệu
 
-Sử dụng bộ lọc http để hiển thị chỉ các gói tin HTTP.
-Theo dõi luồng dữ liệu để tìm kiếm các yêu cầu và phản hồi HTTP có chứa flag.
-Kiểm tra kỹ nội dung gói tin, bao gồm cả tiêu đề và payload, để tìm kiếm flag.
+Follow TCP/UDP Stream: Nhấp chuột phải vào một gói tin và chọn "Follow" > "TCP Stream" hoặc "UDP Stream" để theo dõi toàn bộ luồng dữ liệu giữa hai điểm cuối.
 
-Bạn muốn khai thác lỗ hổng SQL Injection.
+7. Phân tích chi tiết các giao thức cụ thể
 
-Sử dụng bộ lọc http.request.method == "POST" để hiển thị chỉ các yêu cầu POST.
-Theo dõi luồng dữ liệu và phân tích nội dung của các tham số POST để tìm kiếm dấu hiệu của SQL Injection.
+HTTP: Kiểm tra các yêu cầu và phản hồi HTTP để tìm kiếm thông tin nhạy cảm như username, password, hoặc dữ liệu quan trọng.
+DNS: Phân tích các truy vấn DNS để xem các tên miền được truy cập.
+SMTP/POP3/IMAP: Kiểm tra email để phát hiện thông tin nhạy cảm hoặc mã độc.
+FTP: Xem các tệp tin được truyền tải và các lệnh FTP.
+
+8. Tìm kiếm các dấu hiệu bất thường
+
+Malformed Packets: Tìm kiếm các gói tin bị lỗi hoặc không hợp lệ có thể là dấu hiệu của tấn công mạng.
+High Traffic: Xác định các địa chỉ IP hoặc cổng có lượng traffic lớn bất thường.
+Unusual Protocols: Tìm kiếm các giao thức không phổ biến hoặc các gói tin sử dụng các cổng không tiêu chuẩn.
+
+9. Tìm kiếm dữ liệu ẩn và phân tích mã độc
+
+Tìm kiếm dữ liệu ẩn: Sử dụng các công cụ như NetworkMiner để tìm kiếm các tệp tin hoặc dữ liệu ẩn trong các luồng dữ liệu.
+Phân tích mã độc: Nếu phát hiện mã độc, sử dụng các công cụ phân tích mã độc như Cuckoo Sandbox để phân tích hành vi của nó.
+
+10. Lưu lại và báo cáo kết quả
+
+Export Packets: Sử dụng chức năng export của Wireshark để lưu lại các gói tin quan trọng phục vụ cho việc báo cáo hoặc phân tích thêm.
+Báo cáo kết quả: Tổng hợp và báo cáo kết quả phân tích, bao gồm các phát hiện chính và các khuyến nghị về bảo mật.
 
 Quy Trình Giải Quyết Các Thử Thách Archive
 
@@ -85,3 +93,78 @@ Sử dụng zipinfo để kiểm tra nội dung mà không cần giải nén.
 Thử sửa chữa tệp với zip -F hoặc zip -FF nếu tệp zip bị hỏng.
 Nếu tệp được bảo vệ bằng mật khẩu, thử dùng fcrackzip để brute-force mật khẩu.
 Kiểm tra các trường hợp plaintext attack nếu có bản sao không mã hóa của bất kỳ tệp nào bên trong.
+
+Phân tích một file ảnh trong các thử thách CTF forensics yêu cầu một loạt các bước cụ thể để kiểm tra và trích xuất thông tin ẩn. Dưới đây là một chiến lược chi tiết để phân tích một file ảnh hiệu quả trong các thử thách CTF forensics:
+
+### 1. Kiểm tra thông tin cơ bản
+- **Xem thông tin metadata**: Sử dụng công cụ như `exiftool` để kiểm tra metadata của ảnh.
+    ```bash
+    exiftool filename.jpg
+    ```
+- **Kiểm tra thông tin định dạng**: Dùng `file` để xác định loại file.
+    ```bash
+    file filename.jpg
+    ```
+
+### 2. Kiểm tra các thuộc tính của ảnh
+- **Kiểm tra kích thước và màu sắc**: Sử dụng các công cụ như `identify` (từ ImageMagick) để xem thông tin chi tiết về kích thước, độ sâu màu, v.v.
+    ```bash
+    identify filename.jpg
+    ```
+
+### 3. Phân tích nội dung ảnh
+- **Hiển thị ảnh**: Mở ảnh bằng trình xem ảnh để xem có gì bất thường về mặt trực quan.
+- **Sử dụng hex editor**: Mở file bằng một trình soạn thảo hex (như `xxd`, `HxD`) để xem cấu trúc hex của file.
+    ```bash
+    xxd filename.jpg
+    ```
+
+### 4. Kiểm tra dấu vết của steganography
+- **Sử dụng các công cụ steganography**: Các công cụ như `steghide`, `stegsolve`, và `zsteg` để kiểm tra liệu ảnh có chứa dữ liệu ẩn hay không.
+    ```bash
+    steghide extract -sf filename.jpg
+    ```
+    ```bash
+    zsteg filename.jpg
+    ```
+
+### 5. Phân tích ảnh bằng các kỹ thuật khác
+- **Sử dụng binwalk**: Kiểm tra xem ảnh có chứa file nhúng hoặc dữ liệu khác.
+    ```bash
+    binwalk filename.jpg
+    ```
+- **Trích xuất dữ liệu ẩn**: Nếu binwalk tìm thấy dữ liệu, trích xuất nó bằng cách sử dụng `dd` hoặc `binwalk -e`.
+    ```bash
+    binwalk -e filename.jpg
+    ```
+
+### 6. Kiểm tra các thuộc tính hình ảnh khác
+- **Sử dụng stego-lsb**: Kiểm tra các bit ít quan trọng (Least Significant Bits - LSB) để tìm dữ liệu ẩn.
+    ```bash
+    stegolsb -r filename.jpg
+    ```
+
+### 7. Kiểm tra các lớp và kênh màu
+- **Sử dụng stegsolve**: Kiểm tra các lớp màu khác nhau để tìm dữ liệu ẩn.
+    ```bash
+    java -jar stegsolve.jar
+    ```
+
+### 8. Phân tích sâu hơn bằng cách sử dụng script Python
+- **Viết script để phân tích**: Nếu cần, viết các script Python để phân tích chi tiết từng byte của ảnh.
+    ```python
+    from PIL import Image
+
+    image = Image.open('filename.jpg')
+    pixels = list(image.getdata())
+    # Phân tích từng pixel
+    ```
+
+### 9. Kiểm tra các kỹ thuật mã hóa và nén
+- **Kiểm tra các phương pháp nén và mã hóa**: Đôi khi dữ liệu ẩn có thể được mã hóa hoặc nén.
+
+### 10. Tìm kiếm chuỗi ký tự ẩn
+- **Sử dụng strings**: Tìm kiếm các chuỗi ký tự trong file ảnh để tìm các gợi ý hoặc thông tin ẩn.
+    ```bash
+    strings filename.jpg
+    ```
