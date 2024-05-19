@@ -1,3 +1,29 @@
+Mô hình TCP/IP sở hữu rất nhiều giao thức, mỗi giao thức đảm nhiệm một chức năng riêng biệt để đảm bảo hoạt động của mạng. Dưới đây là một số giao thức quan trọng nhất, được phân loại theo từng lớp:
+
+Lớp Ứng dụng:
+
+HTTP (Hypertext Transfer Protocol): Giao thức nền tảng cho World Wide Web, cho phép trình duyệt web giao tiếp với máy chủ web để truy xuất tài nguyên như trang web, hình ảnh, video.
+HTTPS (HTTP Secure): Phiên bản bảo mật của HTTP, sử dụng mã hóa để bảo vệ dữ liệu truyền tải, đảm bảo an toàn cho các giao dịch trực tuyến.
+FTP (File Transfer Protocol): Cho phép tải lên và tải xuống tệp giữa các máy chủ.
+SMTP (Simple Mail Transfer Protocol): Được sử dụng để gửi email.
+POP3 (Post Office Protocol 3) và IMAP (Internet Message Access Protocol): Được sử dụng để nhận email.
+DNS (Domain Name System): Dịch tên miền (ví dụ: google.com) thành địa chỉ IP, cho phép người dùng truy cập trang web bằng tên miền dễ nhớ thay vì địa chỉ IP khó nhớ.
+DHCP (Dynamic Host Configuration Protocol): Tự động gán địa chỉ IP cho các thiết bị trên mạng, giúp đơn giản hóa việc quản lý mạng.
+
+Lớp Truyền tải:
+
+TCP (Transmission Control Protocol): Cung cấp luồng dữ liệu đáng tin cậy, đảm bảo dữ liệu đến đích đầy đủ và theo thứ tự. TCP được sử dụng bởi các ứng dụng yêu cầu độ tin cậy cao như HTTP, FTP, SMTP.
+UDP (User Datagram Protocol): Cung cấp dịch vụ truyền dữ liệu không kết nối, không đảm bảo độ tin cậy nhưng tốc độ nhanh hơn. UDP được sử dụng bởi các ứng dụng như streaming video, chơi game trực tuyến, VoIP.
+
+Lớp Internet:
+
+IP (Internet Protocol): Giao thức nền tảng của mạng Internet, chịu trách nhiệm định địa chỉ và định tuyến các gói dữ liệu giữa các mạng.
+
+Lớp Liên kết:
+
+Ethernet: Giao thức mạng cục bộ (LAN) phổ biến nhất, được sử dụng để kết nối các thiết bị trong cùng một mạng.
+Wi-Fi: Cho phép kết nối mạng không dây.
+
 So sánh sự khác nhau và giống nhau giữa các lớp trong mô hình TCP/IP.
 
 Giống nhau:
