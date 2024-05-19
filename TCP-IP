@@ -9,7 +9,7 @@ Hoạt động tuần tự: Dữ liệu đi qua các lớp theo thứ tự từ 
 Khác nhau:
 
 Lớp	              Chức năng chính	                                           Giao thức ví dụ	               Điểm khác biệt
-Ứng dụng	        Cung cấp dịch vụ cho ứng dụng người dùng	                 HTTP, FTP, SMTP, DNS	           Tương tác trực tiếp với người dùng, cung cấp giao diện cho các ứng dụng
+Ứng dụng	        Cung cấp dịch vụ cho ứng dụng người dùng	                 HTTP, FTP, SMTP, DNS	       Tương tác trực tiếp với người dùng, cung cấp giao diện cho các ứng dụng
 Truyền tải	      Đảm bảo truyền dữ liệu tin cậy giữa các máy chủ	           TCP, UDP	                       Tập trung vào kết nối và độ tin cậy của dữ liệu
 Internet	        Định tuyến gói tin giữa các mạng khác nhau	               IP	                             Xử lý địa chỉ logic (IP) và định tuyến
 Liên kết	        Truyền dữ liệu trên môi trường vật lý	                     Ethernet, Wi-Fi	               Xử lý địa chỉ vật lý (MAC) và truyền dữ liệu vật lý
