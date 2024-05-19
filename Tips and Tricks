@@ -30,6 +30,9 @@ Mẹo:
 Sử dụng bộ lọc Wireshark để tập trung vào thông tin liên quan.
 Tham khảo tài liệu về giao thức ứng dụng để phân tích payload hiệu quả.
 Thực hành thường xuyên để nâng cao kỹ năng phân tích.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Hướng dẫn phân tích file pcapng trong CTF:
 
 Để phân tích file pcapng trong CTF hiệu quả, bạn có thể áp dụng các bước sau:
@@ -85,6 +88,8 @@ Phân tích mã độc: Nếu phát hiện mã độc, sử dụng các công c�
 Export Packets: Sử dụng chức năng export của Wireshark để lưu lại các gói tin quan trọng phục vụ cho việc báo cáo hoặc phân tích thêm.
 Báo cáo kết quả: Tổng hợp và báo cáo kết quả phân tích, bao gồm các phát hiện chính và các khuyến nghị về bảo mật.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Quy Trình Giải Quyết Các Thử Thách Archive
 
 Bắt đầu bằng cách kiểm tra tệp zip với unzip để xem liệu có thông báo lỗi nào không.
@@ -93,6 +98,8 @@ Sử dụng zipinfo để kiểm tra nội dung mà không cần giải nén.
 Thử sửa chữa tệp với zip -F hoặc zip -FF nếu tệp zip bị hỏng.
 Nếu tệp được bảo vệ bằng mật khẩu, thử dùng fcrackzip để brute-force mật khẩu.
 Kiểm tra các trường hợp plaintext attack nếu có bản sao không mã hóa của bất kỳ tệp nào bên trong.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Phân tích một file ảnh trong các thử thách CTF forensics yêu cầu một loạt các bước cụ thể để kiểm tra và trích xuất thông tin ẩn. Dưới đây là một chiến lược chi tiết để phân tích một file ảnh hiệu quả trong các thử thách CTF forensics:
 
