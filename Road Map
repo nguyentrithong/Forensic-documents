@@ -280,3 +280,71 @@ Tham gia cộng đồng CTF:
 
 Tìm kiếm các write-up, bài viết chia sẻ kinh nghiệm giải các thử thách Network Forensics.
 Tham gia các diễn đàn, group CTF để thảo luận và học hỏi từ những người khác.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Lộ trình học tập hiệu quả để bạn có thể khám phá và chinh phục mảng Memory Forensics trong CTF:
+
+Giai đoạn 1: Nắm vững kiến thức nền tảng
+
+Kiến trúc máy tính:
+
+Hiểu rõ cấu trúc bộ nhớ (RAM), cách thức dữ liệu được lưu trữ và truy cập trong RAM.
+Nắm vững khái niệm về không gian địa chỉ ảo, không gian địa chỉ vật lý, paging, segmentation.
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Computer_memory
+https://www.tutorialspoint.com/operating_system/os_memory_management.htm
+
+Hệ điều hành:
+
+Tìm hiểu về cách thức hệ điều hành quản lý bộ nhớ, phân bổ và giải phóng bộ nhớ cho các tiến trình.
+Nắm được khái niệm về kernel space, user space, process, thread.
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Operating_system
+https://www.tutorialspoint.com/operating_system/index.htm
+
+File dump bộ nhớ:
+
+Nắm được định dạng file dump bộ nhớ (thường là .raw, .dmp, .img).
+Hiểu cách thức thông tin được lưu trữ trong file dump, cách trích xuất dữ liệu từ file dump.
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Core_dump
+
+Giai đoạn 2: Kỹ thuật phân tích Memory Forensics
+
+Sử dụng Volatility:
+
+Volatility là framework phân tích memory forensics mạnh mẽ và phổ biến.
+Tìm hiểu cách sử dụng Volatility để:
+Xác định profile hệ điều hành của file dump.
+Liệt kê các tiến trình đang chạy, dll đã load.
+Trích xuất thông tin mạng, kết nối, socket.
+Phân tích registry, lịch sử dòng lệnh.
+Khôi phục file, mật khẩu, key từ bộ nhớ.
+Nguồn tham khảo:
+https://www.volatilityfoundation.org/
+https://github.com/volatilityfoundation/volatility
+
+Kỹ thuật phân tích nâng cao:
+
+Tìm hiểu về các kỹ thuật phân tích nâng cao:
+Timeline analysis: Xây dựng dòng thời gian các sự kiện xảy ra trong bộ nhớ.
+Malware analysis: Phân tích malware ẩn náu trong bộ nhớ.
+Data carving: Khôi phục file và dữ liệu từ bộ nhớ.
+
+Giai đoạn 3: Thực hành với các thử thách CTF
+
+Bắt đầu với các thử thách CTF đơn giản:
+
+Tìm kiếm các thử thách Memory Forensics ở mức độ dễ trên các nền tảng CTF như PicoCTF, OverTheWire, HackTheBox.
+
+Nâng cao kỹ năng phân tích:
+
+Thử nghiệm các plugin khác nhau của Volatility.
+Viết script để tự động hóa một số tác vụ phân tích.
+Tìm hiểu các kỹ thuật phân tích nâng cao khác.
+
+Tham gia cộng đồng CTF:
+
+Tìm kiếm các write-up, bài viết chia sẻ kinh nghiệm giải các thử thách Memory Forensics.
+Tham gia các diễn đàn, group CTF để thảo luận và học hỏi từ những người chơi khác.
