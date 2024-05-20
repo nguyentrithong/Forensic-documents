@@ -1,3 +1,39 @@
+Lộ trình phân tích File trong CTF Forensics:
+
+Khám phá sơ bộ (Reconnaissance):
+
+Xác định loại file: Sử dụng file command trên Linux/macOS hoặc TrID trên Windows để xác định loại file dựa vào magic number.
+Kiểm tra kích thước: File quá lớn hoặc quá nhỏ có thể là dấu hiệu bất thường.
+Xem metadata: Sử dụng exiftool để kiểm tra metadata như ngày tạo, ngày chỉnh sửa, tác giả, định dạng,...
+Kiểm tra hash: Tính toán hash (MD5, SHA1, SHA256) để xác định tính toàn vẹn của file và so sánh với các file đã biết.
+
+Phân tích nội dung:
+
+Kiểm tra file text: Sử dụng cat, less, strings để xem nội dung text. Tìm kiếm flag, keyword, thông tin ẩn.
+Phân tích file binary: Sử dụng hexdump, xxd để xem nội dung file dưới dạng hexadecimal. Tìm kiếm pattern, magic number, chuỗi ký tự ẩn.
+
+Sử dụng tool chuyên dụng:
+
+Hình ảnh: GIMP, steghide, zsteg để phân tích steganography, metadata ẩn.
+Âm thanh: Audacity, Sonic Visualiser để phân tích spectrogram, metadata.
+Video: ffmpeg, mediainfo để phân tích metadata, khung hình ẩn.
+
+Tìm kiếm thông tin ẩn:
+
+Steganography: Kiểm tra các kỹ thuật ẩn thông tin trong file.
+Mã hóa: Tìm kiếm dấu hiệu mã hóa và thử các kỹ thuật giải mã.
+File ẩn: Sử dụng binwalk, foremost để tìm kiếm file được nhúng trong file khác.
+Phân tích file system: Nếu file là image đĩa, mount image và phân tích file system bằng các tool như Autopsy.
+
+Mẹo bổ sung:
+
+Ghi chú: Luôn ghi chú cẩn thận về các bước phân tích và phát hiện của bạn.
+Tự động hóa: Viết script để tự động hóa các bước phân tích thường xuyên.
+Tham khảo writeup: Học hỏi từ writeup của các challenge CTF forensics khác để biết thêm các kỹ thuật và tool hữu ích.
+Luyện tập: Càng luyện tập nhiều, bạn càng trở nên thành thạo trong việc phân tích file.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Tóm tắt kiến thức phân tích file .pcapng với Wireshark
 
 1. Khái niệm cơ bản:
