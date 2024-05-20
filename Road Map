@@ -62,7 +62,7 @@ Nhận phản hồi từ các thành viên trong nhóm và từ cộng đồng �
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Dưới đây là lộ trình học tập hiệu quả về file âm thanh cho CTF, được chia thành các giai đoạn:
+Lộ trình học tập hiệu quả về file âm thanh cho CTF, được chia thành các giai đoạn:
 
 Giai đoạn 1: Nền tảng cơ bản
 
@@ -126,4 +126,80 @@ Sử dụng script để tự động hóa một số tác vụ.
 
 Tham gia cộng đồng CTF:
 Tìm kiếm các write-up, bài viết chia sẻ kinh nghiệm giải các thử thách âm thanh.
+Tham gia các diễn đàn, group CTF để thảo luận và học hỏi từ những người khác.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Lộ trình học tập hiệu quả về file ảnh cho CTF, được chia thành các giai đoạn:
+
+Giai đoạn 1: Nền tảng cơ bản
+
+Các kiểu file ảnh:
+
+Nắm vững các định dạng file ảnh phổ biến (.jpg, .png, .gif, .bmp, .tiff) và đặc điểm của chúng (nén, lossy/lossless, metadata).
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Image_file_formats
+https://fileinfo.com/
+
+Cấu trúc file ảnh:
+
+Hiểu về header, metadata, dữ liệu pixel, bảng màu.
+Nắm rõ khái niệm về bit depth, color space (RGB, CMYK, grayscale), độ phân giải.
+Nguồn tham khảo:
+https://exiftool.org/
+https://www.media.mit.edu/pia/Research/deepview/
+
+Sử dụng công cụ:
+
+Làm quen với các công cụ phân tích hình ảnh như:
+ExifTool: Trích xuất metadata.
+GIMP/Photoshop: Chỉnh sửa và phân tích hình ảnh.
+Hex editor: Xem cấu trúc file ở dạng hex.
+Nguồn tham khảo:
+https://exiftool.org/
+https://www.gimp.org/
+https://www.adobe.com/products/photoshop.html
+
+Giai đoạn 2: Kỹ thuật ẩn dữ liệu trong ảnh
+
+Steganography:
+
+Tìm hiểu về kỹ thuật ẩn dữ liệu trong các bit ít quan trọng nhất (LSB) của file ảnh.
+Thử nghiệm với các công cụ steganography như Steghide, OpenStego.
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Steganography
+https://www.garykessler.net/library/steganography.html
+
+Metadata:
+
+Nắm rõ cách thức dữ liệu có thể được giấu trong metadata (EXIF, IPTC, XMP) của file ảnh.
+Sử dụng ExifTool để trích xuất và phân tích metadata.
+
+Kỹ thuật ẩn dữ liệu khác:
+
+Tìm hiểu về các kỹ thuật ẩn dữ liệu khác như:
+Watermarking (dấu chìm)
+Echo hiding
+Transform domain techniques
+Nguồn tham khảo:
+https://www.researchgate.net/publication/220711971_Digital_Image_Steganography_Techniques_and_Analysis_of_Current_Trends
+
+Giai đoạn 3: Thực hành với các thử thách CTF
+
+Bắt đầu với các thử thách CTF đơn giản:
+
+Tham gia các nền tảng CTF như PicoCTF, OverTheWire, HackTheBox.
+Tìm kiếm các thử thách Forensics về hình ảnh ở mức độ dễ.
+
+Nâng cao kỹ năng phân tích:
+
+Thử nghiệm với các kỹ thuật phân tích khác nhau:
+Phân tích histogram
+Phân tích lỗi nén
+Phân tích kênh màu
+Sử dụng script để tự động hóa một số tác vụ.
+
+Tham gia cộng đồng CTF:
+
+Tìm kiếm các write-up, bài viết chia sẻ kinh nghiệm giải các thử thách hình ảnh.
 Tham gia các diễn đàn, group CTF để thảo luận và học hỏi từ những người khác.
