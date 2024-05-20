@@ -59,3 +59,71 @@ Nhận phản hồi từ các thành viên trong nhóm và từ cộng đồng �
 Đặt mục tiêu:
 
 Đặt mục tiêu cụ thể để cải thiện từng kỹ năng trong forensics, chẳng hạn như phân tích memory, network, hoặc malware.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dưới đây là lộ trình học tập hiệu quả về file âm thanh cho CTF, được chia thành các giai đoạn:
+
+Giai đoạn 1: Nền tảng cơ bản
+
+Các kiểu file âm thanh:
+
+Nắm vững các định dạng file âm thanh phổ biến (.wav, .mp3, .ogg, .flac) và đặc điểm của chúng (nén, lossy/lossless, metadata).
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Audio_file_format
+https://fileinfo.com/
+
+Khái niệm âm thanh cơ bản:
+
+Hiểu về tần số, biên độ, dạng sóng, kênh âm thanh (mono, stereo), tốc độ lấy mẫu.
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Sound
+https://www.youtube.com/watch?v=sFwawcl-jys
+
+Sử dụng công cụ Audacity:
+
+Làm quen với Audacity, một công cụ miễn phí phổ biến để chỉnh sửa và phân tích âm thanh.
+Tìm hiểu cách: mở file, hiển thị dạng sóng, spectrogram, phân tích phổ tần số, xuất file.
+Nguồn tham khảo:
+https://manual.audacityteam.org/
+
+Giai đoạn 2: Kỹ thuật ẩn dữ liệu trong âm thanh
+
+Steganography:
+
+Tìm hiểu về kỹ thuật ẩn dữ liệu trong các bit ít quan trọng nhất (LSB) của file âm thanh.
+Thử nghiệm với các công cụ steganography như Steghide, DeepSound, WbStego4.
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Steganography
+
+Mã hóa Morse:
+
+Nhận biết âm thanh mã Morse và giải mã thông điệp.
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Morse_code
+
+SSTV (Slow-scan television):
+
+Tìm hiểu cách thức SSTV nhúng hình ảnh vào âm thanh.
+Sử dụng các phần mềm giải mã SSTV như Robot36.
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/Slow-scan_television
+
+Giai đoạn 3: Thực hành với các thử thách CTF
+
+Bắt đầu với các thử thách CTF đơn giản:
+
+Tham gia các nền tảng CTF như PicoCTF, OverTheWire, HackTheBox.
+Tìm kiếm các thử thách Forensics về âm thanh ở mức độ dễ.
+
+Nâng cao kỹ năng phân tích:
+
+Thử nghiệm với các kỹ thuật phân tích khác nhau:
+Phân tích spectrogram chi tiết.
+Tách kênh âm thanh.
+Chuyển đổi định dạng file.
+Sử dụng script để tự động hóa một số tác vụ.
+
+Tham gia cộng đồng CTF:
+Tìm kiếm các write-up, bài viết chia sẻ kinh nghiệm giải các thử thách âm thanh.
+Tham gia các diễn đàn, group CTF để thảo luận và học hỏi từ những người khác.
