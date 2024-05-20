@@ -203,3 +203,80 @@ Tham gia cộng đồng CTF:
 
 Tìm kiếm các write-up, bài viết chia sẻ kinh nghiệm giải các thử thách hình ảnh.
 Tham gia các diễn đàn, group CTF để thảo luận và học hỏi từ những người khác.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Lộ trình học tập hiệu quả về file .pcapng để bạn có thể tự tin tham gia các thử thách CTF:
+
+Giai đoạn 1: Nắm vững kiến thức nền tảng
+
+Kiến thức mạng cơ bản:
+
+Ôn lại các kiến thức về mô hình TCP/IP, các tầng mạng, các giao thức phổ biến (HTTP, DNS, FTP, SSH).
+Hiểu rõ địa chỉ IP, cổng (port), MAC address.
+Nguồn tham khảo:
+https://en.wikipedia.org/wiki/TCP/IP_model
+https://www.guru99.com/tcp-ip-model.html
+
+File .pcapng là gì?
+
+Hiểu rõ định dạng file .pcapng, cách thức nó lưu trữ dữ liệu mạng.
+Nắm được cấu trúc của một gói tin mạng (packet) trong file .pcapng.
+Nguồn tham khảo:
+https://wiki.wireshark.org/Development/LibpcapFileFormat
+
+Sử dụng Wireshark:
+
+Wireshark là công cụ phân tích mạng mạnh mẽ và phổ biến.
+Tìm hiểu cách:
+Mở file .pcapng.
+Lọc gói tin theo giao thức, IP, cổng, etc.
+Phân tích nội dung gói tin.
+Theo dõi luồng dữ liệu (Follow TCP Stream).
+Nguồn tham khảo:
+https://www.wireshark.org/
+https://www.tutorialspoint.com/wireshark/
+
+Giai đoạn 2: Các kỹ thuật phân tích phổ biến trong CTF
+
+Phân tích lưu lượng HTTP:
+
+Nhận diện các request/response HTTP, phân tích header, body, cookie.
+Tìm kiếm các thông tin nhạy cảm (tài khoản, mật khẩu, API key) trong lưu lượng HTTP.
+
+Phân tích DNS:
+
+Phân tích các truy vấn DNS, tìm kiếm các domain/hostname đáng ngờ.
+
+Phân tích FTP:
+
+Theo dõi quá trình tải lên/tải xuống file qua FTP, tìm kiếm file ẩn hoặc chứa dữ liệu quan trọng.
+
+Phân tích SSH:
+
+Phân tích lưu lượng SSH để phát hiện các kết nối bất thường, tấn công brute-force.
+
+Phân tích tấn công mạng:
+
+Nhận diện các mẫu tấn công mạng như SQL Injection, XSS, DDoS trong lưu lượng mạng.
+Nguồn tham khảo:
+https://www.sans.org/
+https://attack.mitre.org/
+
+Giai đoạn 3: Thực hành với các thử thách CTF
+
+Bắt đầu với các thử thách CTF đơn giản:
+
+Tham gia các nền tảng CTF như PicoCTF, OverTheWire, HackTheBox.
+Tìm kiếm các thử thách Forensics liên quan đến file .pcapng ở mức độ dễ.
+
+Nâng cao kỹ năng phân tích:
+
+Sử dụng các bộ lọc Wireshark phức tạp để tìm kiếm thông tin hiệu quả.
+Tập trung vào việc phân tích các giao thức ít phổ biến hơn.
+Viết script để tự động hóa một số tác vụ phân tích.
+
+Tham gia cộng đồng CTF:
+
+Tìm kiếm các write-up, bài viết chia sẻ kinh nghiệm giải các thử thách Network Forensics.
+Tham gia các diễn đàn, group CTF để thảo luận và học hỏi từ những người khác.
